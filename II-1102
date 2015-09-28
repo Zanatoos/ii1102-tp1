@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+/*
+ * 1) Les variables nécessaires à ce calcul sont : 
+ * longueur (float), 
+ * largeur (float), 
+ * hauteur (float), 
+ * resultat (float).
+ * 
+ * 2) DECLARER variable resultat (float).
+ * DEMANDER variable longueur (float), largeur(float) et hauteur(float).
+ * resultat = longueur * largeur * hauteur
+ * Afficher "Le volume de votre pavé droit est de : " + resultat
+ */
+
+public class Tp1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		float longueur, largeur, hauteur, resultat = 0;
+		
+		System.out.println("Quel est la largeur de votre pavé droit ?");
+		largeur = sc.nextFloat();
+		System.out.println("Quel est la longueur de votre pavé droit ?");
+		longueur = sc.nextFloat();
+		System.out.println("Quel est la hauteur de votre pavé droit ?");
+		hauteur = sc.nextFloat();
+		
+		resultat = longueur * largeur * hauteur;
+		
+		System.out.println("Le volume de votre pavé droit est : " + resultat);
+		
+		sc.close();
+	}
+
+}
